@@ -1,6 +1,4 @@
 # Fortipass
-# FortiPass
-
 Download these files in a folder.
 
 => Go to your browser extension setting.
