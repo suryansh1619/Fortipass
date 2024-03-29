@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FortiPass Popup</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+    body {
+      font-family: "JetBrains Mono", monospace;
+      padding: 20px;
+      background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      background-color: #ff8686;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      margin-bottom: 10px;
+      border-radius: 25px;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      width: calc(100% - 24px);
+    }
+    button {
+      padding: 8px 16px;
+      color: white;
+      border: 2px solid black;
+      border-radius: 25px;
+      box-shadow: 6px 4px 2px rgb(249 75 75);
+      cursor: pointer;
+      background-color: #ff4b4b;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+      width: 100%; 
+    }
+    button:hover{
+      background-color: #ff3a3a;
+    }
+  </style>
+</head>
+<body>
+  <form id="loginForm">
+    <h2>FortiPass Login</h2>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <div class="password-container">
+      <input type="password" id="password" name="password">
+      <img src="eye-icon.png" class="password-icon" id="togglePassword" width="20" height="20" alt="Show/Hide Password">
+    </div>
+    <br><br>
+    <button type="submit" id="save">Save</button>
+  </form>
+</body>
+<script src="popup.js"></script>
+</html>
